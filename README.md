@@ -1,0 +1,2 @@
+# ChargeRadar-Occupancy-Aware-EV-Charging-Traffic-Control-for-BESCOM
+ChargeRadar is a BESCOM-facing AI decision-support system that forecasts where EV charging demand will rise, predicts which charging stations will be engaged or full, estimates time-to-full / time-to-free, identifies spillover demand to nearby stations, and recommends grid-aware actions for charging management and infrastructure planning. 
