@@ -1,0 +1,6 @@
+station_id,zone_id,station_type,chargers,power_per_charger_kw,utilization_base
+S1,Z1,slow,5,7,0.6
+S2,Z1,slow,4,7,0.58
+S3,Z2,standard,10,7,0.46
+S4,Z3,fast,4,15,0.62
+S5,Z4,standard,6,7,0.52
