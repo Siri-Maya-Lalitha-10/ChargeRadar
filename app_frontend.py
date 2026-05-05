@@ -1,9 +1,12 @@
-import requests
+import os
+import sys
 import pandas as pd
 import streamlit as st
 from datetime import datetime, date, time
 
-API_URL = "http://127.0.0.1:8000/simulate"
+sys.path.append(os.path.abspath("."))
+
+from app.api.routes import simulate
 
 st.set_page_config(page_title="ChargeRadar", page_icon="⚡", layout="wide")
 
@@ -177,9 +180,7 @@ with st.sidebar:
 
 # ---------------- Helpers ----------------
 def fetch(day: int, hour: int):
-    res = requests.get(API_URL, params={"day": day, "hour": hour}, timeout=20)
-    res.raise_for_status()
-    return res.json()
+    return simulate(day=day, hour=hour)
 
 
 def color(status: str):
